@@ -13,8 +13,8 @@ const About = () => {
                   <div className="col-lg-5 col-12">
                       <div className="about-content">
                           <div className="section-title m-0 mb-4">
-                              <span>What We Do?</span>
-                              <h2>We Are In A Mission To Help The Helpless</h2>
+                              <span>Что мы делаем?</span>
+                              <h2>Мы выполняем миссию по оказанию помощи беспомощным людям</h2>
                           </div>
                           <p className="mb-4">There are many variations of passages of Lorem Ipsum available, but the
                               majority have suffered alteration in some form, by injected humour, or randomised words
@@ -23,7 +23,7 @@ const About = () => {
                           <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
                               Internet tend to repeat predefined chunks as necessary, </p>
                           <div className="site-btns">
-                              <a href="#" className="btn btn-warning">Know More</a>
+                              <a href="#" className="btn btn-warning">Подробнее</a>
                           </div>
                       </div>
                   </div>

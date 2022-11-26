@@ -7,8 +7,8 @@ const Mission = () => {
               <div className="row">
                   <div className="col-12">
                       <div className="section-title">
-                          <span>What We Do?</span>
-                          <h2>We Are In A Mission To Help The Helpless</h2>
+                          <span>Что мы делаем?</span>
+                          <h2>Мы выполняем миссию по оказанию помощи беспомощным людям</h2>
                       </div>
                   </div>
               </div>
@@ -19,7 +19,7 @@ const Mission = () => {
                               <img src="./assets/images/mission/img-8.png" alt=""/>
                           </div>
                           <div className="mission-content">
-                              <h2>Clean Water</h2>
+                              <h2>Какой-то текст</h2>
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo?</p>
                           </div>
                       </div>
@@ -30,7 +30,7 @@ const Mission = () => {
                               <img src="./assets/images/mission/img-5.png" alt=""/>
                           </div>
                           <div className="mission-content">
-                              <h2>Clean Water</h2>
+                              <h2>Какой-то текст</h2>
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo?</p>
                           </div>
                       </div>
@@ -41,7 +41,7 @@ const Mission = () => {
                               <img src="./assets/images/mission/img-6.png" alt=""/>
                           </div>
                           <div className="mission-content">
-                              <h2>Clean Water</h2>
+                              <h2>Какой-то текст</h2>
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo?</p>
                           </div>
                       </div>
@@ -52,7 +52,7 @@ const Mission = () => {
                               <img src="./assets/images/mission/img-7.png" alt=""/>
                           </div>
                           <div className="mission-content">
-                              <h2>Clean Water</h2>
+                              <h2>Какой-то текст</h2>
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo?</p>
                           </div>
                       </div>

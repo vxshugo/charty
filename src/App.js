@@ -5,6 +5,7 @@ import Mission from "./component/mission";
 import About from "./component/about";
 import Case from "./component/case";
 import {useEffect, useState} from "react";
+import Footer from "./component/footer";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Mission/>
                 <About/>
                 <Case/>
+                <Footer/>
             </div>
         ): (
             <PreLoader/>

@@ -8,7 +8,6 @@ import {data} from "../../data/data";
 const Case = () => {
     const Options = {
         option: {
-            loop: true,
             margin: 30,
             responsiveClass: true,
             responsive: {
@@ -28,10 +27,13 @@ const Case = () => {
                     items: 3,
                     nav: true,
                     dots: false,
-                    loop: true,
                 }
             }
-        }
+        },
+    }
+
+    const procentFunction = (x,y) => {
+        return 100 * x / y
     }
 
   return(
@@ -39,12 +41,12 @@ const Case = () => {
           <div className="container">
               <div className="row">
                   <div className="section-title text-center">
-                      <span>Our Causes</span>
-                      <h2>Popular Causes What You Should Know</h2>
+                      <span>Нуждаются в помощи</span>
+                      <h2>Какой-то текст можно вставить</h2>
                   </div>
               </div>
-              <div className="row" loop nav margin={30}>
-                  <OwlCarousel className='owl-theme'>
+              <div className="row">
+                  <OwlCarousel className='owl-theme'  {...Options.option}>
                       {data.map((item, index) => (
                           <div className="item" key={index}>
                               <div className="cause-card post shadow-sm p-0">
@@ -69,24 +71,24 @@ const Case = () => {
                                           </div>
                                       </div>
                                       <div className="progress mt-5 mb-4">
-                                          <div className="progress-bar bg-warning" role="progressbar" style={{width: "25%"}}
-                                               aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                          <div className="progress-bar bg-warning" role="progressbar" style={{width: `${procentFunction(item.Raised, item.Goal)}%` }}
+                                               aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{procentFunction(item.Raised, item.Goal)}%
                                           </div>
                                       </div>
                                       <div className="raise-goal d-flex justify-content-between">
                                           <div className="raise">
-                                              <span>Raised:</span>
+                                              <span>Собрано:</span>
                                               KZT {item.Raised}
                                           </div>
                                           <div className="goal">
-                                              <span>Goal:</span>
+                                              <span>Нужно:</span>
                                               KZT {item.Goal}
                                           </div>
                                       </div>
                                   </div>
                                   <div className="cause-btns d-flex">
-                                      <a href="#" className="btn">Learn More</a>
-                                      <a href="#" className="btn">Donate Now</a>
+                                      <a href="#" className="btn">Подробнее</a>
+                                      <a href="#" className="btn">Пожертвовать</a>
                                   </div>
                               </div>
                           </div>
