@@ -1,6 +1,39 @@
 import React from "react";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import OwlCarousel from 'react-owl-carousel';
+import {data} from "../../data/data";
+
 
 const Case = () => {
+    const Options = {
+        option: {
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
+                    nav: false,
+                },
+                550: {
+                    items: 2,
+                    center: false,
+                    margin: 10,
+                    dots: true,
+                    nav: false
+                },
+                992: {
+                    items: 3,
+                    nav: true,
+                    dots: false,
+                    loop: true,
+                }
+            }
+        }
+    }
+
   return(
       <section id="causes" className="section-padding">
           <div className="container">
@@ -10,53 +43,55 @@ const Case = () => {
                       <h2>Popular Causes What You Should Know</h2>
                   </div>
               </div>
-              <div className="row">
-                  <div className="owl-index owl-theme owl-carousel">
-                      <div className="item">
-                          <div className="cause-card post shadow-sm p-0">
-                              <div className="post-img">
-                                  <img src="./assets/images/blog/img-1.jpg" alt=""/>
-                              </div>
-                              <div className="cause-content post-info w-100">
-                                  <div className="post-content">
-                                      <h3 className="fs-4">They are waiting for your help.</h3>
+              <div className="row" loop nav margin={30}>
+                  <OwlCarousel className='owl-theme'>
+                      {data.map((item, index) => (
+                          <div className="item" key={index}>
+                              <div className="cause-card post shadow-sm p-0">
+                                  <div className="post-img">
+                                      <img src={item.img} alt=""/>
                                   </div>
-                                  <div className="d-flex">
-                                      <div className="post-info-user d-flex">
-                                          <div className="user-img">
-                                              <img src="./assets/images/blog/admin.jpg" alt=""/>
+                                  <div className="cause-content post-info w-100">
+                                      <div className="post-content">
+                                          <h3 className="fs-4">{item.title}</h3>
+                                      </div>
+                                      <div className="d-flex">
+                                          <div className="post-info-user d-flex">
+                                              <div className="user-img">
+                                                  <img src="./assets/images/blog/admin.jpg" alt=""/>
+                                              </div>
+                                              <div className="user-name ms-2">
+                                                  <a href="">By Admin</a>
+                                              </div>
                                           </div>
-                                          <div className="user-name ms-2">
-                                              <a href="">By Admin</a>
+                                          <div className="post-date ms-3 d-flex align-items-center justify-content-between">
+                                              <span><i className="fa-solid fa-calendar-days me-1"></i>{item.date}</span>
                                           </div>
                                       </div>
-                                      <div className="post-date ms-3 d-flex align-items-center justify-content-between">
-                                          <span><i className="fa-solid fa-calendar-days me-1"></i> Sep 25,2020</span>
+                                      <div className="progress mt-5 mb-4">
+                                          <div className="progress-bar bg-warning" role="progressbar" style={{width: "25%"}}
+                                               aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                          </div>
+                                      </div>
+                                      <div className="raise-goal d-flex justify-content-between">
+                                          <div className="raise">
+                                              <span>Raised:</span>
+                                              KZT {item.Raised}
+                                          </div>
+                                          <div className="goal">
+                                              <span>Goal:</span>
+                                              KZT {item.Goal}
+                                          </div>
                                       </div>
                                   </div>
-                                  <div className="progress mt-5 mb-4">
-                                      <div className="progress-bar bg-warning" role="progressbar" style={{width: "25%"}}
-                                           aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
-                                      </div>
+                                  <div className="cause-btns d-flex">
+                                      <a href="#" className="btn">Learn More</a>
+                                      <a href="#" className="btn">Donate Now</a>
                                   </div>
-                                  <div className="raise-goal d-flex justify-content-between">
-                                      <div className="raise">
-                                          <span>Raised:</span>
-                                          $7,000.00
-                                      </div>
-                                      <div className="goal">
-                                          <span>Goal:</span>
-                                          $8,000.00
-                                      </div>
-                                  </div>
-                              </div>
-                              <div className="cause-btns d-flex">
-                                  <a href="#" className="btn">Learn More</a>
-                                  <a href="#" className="btn">Donate Now</a>
                               </div>
                           </div>
-                      </div>
-                  </div>
+                      ))}
+                  </OwlCarousel>
               </div>
           </div>
       </section>
