@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const TopNav = () => {
   return(
@@ -9,12 +10,12 @@ const TopNav = () => {
                       <div className="col-md-6 col-sm-7 col-12 d-md-flex justify-content-start">
                           <div className="contact-intro d-flex justify-content-center">
                               <div className="intro-phone border-end d-flex align-items-center p-3 ps-0">
-                                <span className="text-secondary d-sm-flex align-items-center"><i
-                                    className="fa-solid fa-phone text-warning me-1"></i> +7-777-777-77-77</span>
+                                <a href="tel:+77053011142" className="text-secondary d-sm-flex align-items-center"><i
+                                    className="fa-solid fa-phone text-warning me-1"></i>+7 705 301 1142</a>
                               </div>
                               <div className="intro-mail d-flex align-items-center p-3">
-                                <span className="text-secondary d-sm-flex align-items-center"><i
-                                    className="fa-solid fa-envelope text-warning me-1"></i> example@gmail.com</span>
+                                <a href="mailto:yankepchoop@gmail.com" className="text-secondary d-sm-flex align-items-center"><i
+                                    className="fa-solid fa-envelope text-warning me-1"></i> yankepchoop@gmail.com</a>
                               </div>
                           </div>
                       </div>
@@ -38,16 +39,16 @@ const TopNav = () => {
                   <div className="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
                       <ul className="navbar-nav mb-2 mb-lg-0">
                           <li className="nav-item">
-                              <a className="nav-link" aria-current="page" href="#">Домой</a>
+                              <Link className="nav-link" aria-current="page" to={"/"}>Домой</Link>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link" href="#">О нас</a>
+                              <a className="nav-link" href="#about">О нас</a>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link" href="#">Кейсы</a>
+                              <a className="nav-link" href="#causes">Кейсы</a>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link me-5" href="#">Контакты</a>
+                              <a className="nav-link me-5" href="#contact">Контакты</a>
                           </li>
                       </ul>
 

@@ -3,6 +3,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel';
 import {data} from "../../data/data";
+import {Link} from "react-router-dom";
 
 
 const Case = () => {
@@ -51,7 +52,7 @@ const Case = () => {
                           <div className="item" key={index}>
                               <div className="cause-card post shadow-sm p-0">
                                   <div className="post-img">
-                                      <img src={item.img} alt=""/>
+                                      <img src={item.img[0]} alt=""/>
                                   </div>
                                   <div className="cause-content post-info w-100">
                                       <div className="post-content">
@@ -87,7 +88,11 @@ const Case = () => {
                                       </div>
                                   </div>
                                   <div className="cause-btns d-flex">
-                                      <a href="#" className="btn">Подробнее</a>
+                                      <a href="#" className="btn">
+                                          <Link to={`/${item.id}`}>
+                                              Подробнее
+                                          </Link>
+                                      </a>
                                       <a href="#" className="btn">Пожертвовать</a>
                                   </div>
                               </div>

@@ -16,12 +16,9 @@ const About = () => {
                               <span>Что мы делаем?</span>
                               <h2>Мы выполняем миссию по оказанию помощи беспомощным людям</h2>
                           </div>
-                          <p className="mb-4">There are many variations of passages of Lorem Ipsum available, but the
-                              majority have suffered alteration in some form, by injected humour, or randomised words
-                              which don't look even slightly believable. If you are going to use a passage of Lorem
-                              Ipsum, you need to be sure there.</p>
-                          <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-                              Internet tend to repeat predefined chunks as necessary, </p>
+                          <p className="mb-4">
+                              Сплотить народ в нашей общей цели. Показать доступность благотворительности. Абсолютно каждый человек может внести вклад в улучшение жизни детей,которым необходима наша помощь.
+                          </p>
                           <div className="site-btns">
                               <a href="#" className="btn btn-warning">Подробнее</a>
                           </div>

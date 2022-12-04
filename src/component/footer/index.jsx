@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return(
-      <footer className="footer-59391">
+      <footer id="contact" className="footer-59391">
           <div className="container">
               <div className="row">
                   <div className="col-lg-3 col-md-6 col-xs-12 mb-3">
@@ -36,15 +36,15 @@ const Footer = () => {
                           </div>
                           <p className="fs-6" style={{color: "gray"}}>Благотворительный фонд: Путь милосердия</p>
                           <ul className="widget-list">
+                              {/*<li className="widget-list-item d-flex align-items-center mb-2">*/}
+                              {/*    <i className="fa-solid fa-location-dot me-3"></i> <span style={{color: "gray"}}>28 Street, New York City,*/}
+                              {/*              USA</span>*/}
+                              {/*</li>*/}
                               <li className="widget-list-item d-flex align-items-center mb-2">
-                                  <i className="fa-solid fa-location-dot me-3"></i> <span style={{color: "gray"}}>28 Street, New York City,
-                                            USA</span>
+                                  <i className="fa-solid fa-phone me-3"></i> <a href="tel:+77053011142" style={{color: "gray"}}>+7 705 301 1142</a>
                               </li>
                               <li className="widget-list-item d-flex align-items-center mb-2">
-                                  <i className="fa-solid fa-phone me-3"></i> <span style={{color: "gray"}}>+994 55 555 55 55</span>
-                              </li>
-                              <li className="widget-list-item d-flex align-items-center mb-2">
-                                  <i className="fa-solid fa-envelope me-3"></i> <span style={{color: "gray"}}>example@gmail.com</span>
+                                  <i className="fa-solid fa-envelope me-3"></i> <a href="mailto:yankepchoop@gmail.com" style={{color: "gray"}}>yankepchoop@gmail.com</a>
                               </li>
                           </ul>
                       </div>
@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="row">
                   <div className="col ">
                       <div className="copyright">
-                          <p><small>Copyright 2022. Все права защишены.</small></p>
+                          <p><small>Copyright 2022. Все права защишены. Сайт разработан <a href="mailto:vxshugo@gmail.com">vxshugo</a></small></p>
                       </div>
                   </div>
               </div>

@@ -1,11 +1,8 @@
-import TopNav from "./component/topNav";
 import PreLoader from "./component/preLoader";
-import Hero from "./component/hero";
-import Mission from "./component/mission";
-import About from "./component/about";
-import Case from "./component/case";
 import {useEffect, useState} from "react";
-import Footer from "./component/footer";
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutChildren from "./pages/aboutChildren";
 
 
 function App() {
@@ -18,14 +15,12 @@ function App() {
   return (
     <div className="App">
         {loading ? (
-            <div>
-                <TopNav/>
-                <Hero/>
-                <Mission/>
-                <About/>
-                <Case/>
-                <Footer/>
-            </div>
+            <Router>
+                <Routes>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route exact path="/:id" element={<AboutChildren/>}/>
+                </Routes>
+            </Router>
         ): (
             <PreLoader/>
         )}
