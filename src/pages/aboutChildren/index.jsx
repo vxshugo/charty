@@ -7,15 +7,10 @@ import OwlCarousel from "react-owl-carousel";
 const AboutChildren = () => {
     const location = useLocation()
     const id = location.pathname.split("/")[1];
-    const [children, setChildren] = useState({});
 
-    useEffect(()=> {
-        setChildren(data[id])
-    },[id,children.img])
 
     const Options = {
         option: {
-            margin: 30,
             responsiveClass: true,
             responsive: {
                 0: {
@@ -54,7 +49,7 @@ const AboutChildren = () => {
                       <div className="col-md-8">
                           <div className="cause-detail post">
                               <OwlCarousel className='owl-theme owl-post' {...Options.option}>
-                                  {children.img?.map((item, index) => (
+                                  {data[id].img?.map((item, index) => (
                                       <div className="item" id={index}>
                                           <div className="post-img">
                                               <img src={item} alt=""/>
@@ -74,7 +69,7 @@ const AboutChildren = () => {
                                           </div>
                                       </div>
                                       <div className="post-date ms-3 d-flex align-items-center justify-content-between">
-                                          <span><i className="fa-solid fa-calendar-days me-1"></i>{children.date}</span>
+                                          <span><i className="fa-solid fa-calendar-days me-1"></i>{data[id].date}</span>
                                       </div>
                                   </div>
                               </div>
@@ -95,11 +90,11 @@ const AboutChildren = () => {
                                               <div className="col-12">
                                                   <div className="case-content">
                                                       <div className="case-text-top">
-                                                          <h2>{children.title}</h2>
+                                                          <h2>{data[id].title}</h2>
                                                           <div className="progress mt-5 mb-4">
                                                               <div className="progress-bar bg-warning"
                                                                    role="progressbar"
-                                                                   style={{width: `${procentFunction(children.Raised, children.Goal)}%`}}
+                                                                   style={{width: `${procentFunction(data[id].Raised, data[id].Goal)}%`}}
                                                                    aria-valuenow="25"
                                                                    aria-valuemin="0"
                                                                    aria-valuemax="100">25%
@@ -108,15 +103,15 @@ const AboutChildren = () => {
                                                           <div className="raise-goal d-flex justify-content-between">
                                                               <div className="raise">
                                                                   <span>Собрано:</span>
-                                                                  KZT {children.Raised}
+                                                                  KZT {data[id].Raised}
                                                               </div>
                                                               <div className="goal">
                                                                   <span>Нужно:</span>
-                                                                  KZT {children.Goal}
+                                                                  KZT {data[id].Goal}
                                                               </div>
                                                           </div>
                                                           <div className="case-text-content">
-                                                              <p className="mb-4"><span className="desc-information">{children.desc}</span></p>
+                                                              <p className="mb-4"><span className="desc-information">{data[id].desc}</span></p>
                                                           </div>
                                                       </div>
                                                   </div>
