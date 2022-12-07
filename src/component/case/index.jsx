@@ -93,7 +93,11 @@ const Case = () => {
                                               Подробнее
                                           </Link>
                                       </a>
-                                      <a href="#" className="btn">Пожертвовать</a>
+                                      <a href="#" className="btn">
+                                          <Link to={`/donate}`}>
+                                              Пожертвовать
+                                          </Link>
+                                      </a>
                                   </div>
                               </div>
                           </div>
