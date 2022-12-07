@@ -43,7 +43,7 @@ const Case = () => {
               <div className="row">
                   <div className="section-title text-center">
                       <span>Нуждаются в помощи</span>
-                      <h2>Какой-то текст можно вставить</h2>
+                      <h2>Дети нуждающиеся в помощи</h2>
                   </div>
               </div>
               <div className="row">

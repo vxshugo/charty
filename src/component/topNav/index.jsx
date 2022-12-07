@@ -21,7 +21,7 @@ const TopNav = () => {
                       </div>
                       <div className="col-md-6 col-sm-7 col-12 d-md-flex justify-content-end">
                           <div className="d-flex align-items-center justify-content-center">
-                              <a href="donate.html" className="btn btn-warning">Пожертвовать сейчас</a>
+                              <Link to={"/donate"} className="btn btn-warning">Пожертвовать сейчас</Link>
                           </div>
                       </div>
                   </div>
@@ -30,9 +30,9 @@ const TopNav = () => {
 
           <nav className="navigation navbar navbar-expand-lg navbar-light bg-white">
               <div className="container">
-                  <a className="navbar-brand p-md-3 mt-1" href="#">
+                  <Link className="navbar-brand p-md-3 mt-1" to={"/"}>
                       <img src="./assets/images/logo-2.png" width="126px" height="auto" alt=""/>
-                  </a>
+                  </Link>
                   <button className="navbar-toggler" type="button">
                       <span className="navbar-toggler-icon"></span>
                   </button>
@@ -61,16 +61,16 @@ const TopNav = () => {
                   </div>
                   <ul className="small-nav">
                       <li className="small-nav-item">
-                          <a className="small-nav-link" aria-current="page" href="#">Домой</a>
+                          <Link className="small-nav-link" aria-current="page" to={"/"}>Домой</Link>
                       </li>
                       <li className="small-nav-item">
-                          <a className="small-nav-link" href="#">О нас</a>
+                          <a className="small-nav-link" href="#about">О нас</a>
                       </li>
                       <li className="small-nav-item">
-                          <a className="small-nav-link" href="#">Кейсы</a>
+                          <a className="small-nav-link" href="#causes">Кейсы</a>
                       </li>
                       <li className="small-nav-item">
-                          <a className="small-nav-link" href="#">Контакты</a>
+                          <a className="small-nav-link" href="#contact">Контакты</a>
                       </li>
                   </ul>
               </div>

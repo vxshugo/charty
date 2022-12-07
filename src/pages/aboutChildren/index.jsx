@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {data} from "../../data/data";
 import TopNav from "../../component/topNav";
 import OwlCarousel from "react-owl-carousel";
+import Footer from "../../component/footer";
 
 const AboutChildren = () => {
     const location = useLocation()
@@ -41,16 +42,14 @@ const AboutChildren = () => {
   return(
       <main>
           <TopNav/>
-
-
-          <section id="cause-single" class="section-padding">
+          <section id="cause-single" className="section-padding">
               <div className="container">
                   <div className="row">
                       <div className="col-md-8">
                           <div className="cause-detail post">
                               <OwlCarousel className='owl-theme owl-post' {...Options.option}>
-                                  {data[id].img?.map((item, index) => (
-                                      <div className="item" id={index}>
+                                  {data[id].img?.map((item, key) => (
+                                      <div className="item" id={key}>
                                           <div className="post-img">
                                               <img src={item} alt=""/>
                                           </div>
@@ -125,6 +124,7 @@ const AboutChildren = () => {
                   </div>
               </div>
           </section>
+          <Footer/>
       </main>
   )
 }
