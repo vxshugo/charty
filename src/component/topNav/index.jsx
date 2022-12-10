@@ -10,17 +10,20 @@ const TopNav = () => {
                       <div className="col-md-6 col-sm-7 col-12 d-md-flex justify-content-start">
                           <div className="contact-intro d-flex justify-content-center">
                               <div className="intro-phone border-end d-flex align-items-center p-3 ps-0">
-                                <a href="tel:+77053011142" className="text-secondary d-sm-flex align-items-center"><i
-                                    className="fa-solid fa-phone text-warning me-1"></i>+7 705 301 1142</a>
+                                <a href="tel:+77056308025" className="text-secondary d-sm-flex align-items-center"><i
+                                    className="fa-solid fa-phone text-warning me-1"></i>+77056308025</a>
                               </div>
                               <div className="intro-mail d-flex align-items-center p-3">
-                                <a href="mailto:yankepchoop@gmail.com" className="text-secondary d-sm-flex align-items-center"><i
-                                    className="fa-solid fa-envelope text-warning me-1"></i> yankepchoop@gmail.com</a>
+                                <a href="mailto:info@pathmercy.com" className="text-secondary d-sm-flex align-items-center"><i
+                                    className="fa-solid fa-envelope text-warning me-1"></i> info@pathmercy.com</a>
                               </div>
                           </div>
                       </div>
                       <div className="col-md-6 col-sm-7 col-12 d-md-flex justify-content-end">
                           <div className="d-flex align-items-center justify-content-center">
+                              <a href="https://instagram.com/thepathofmercy?igshid=YmMyMTA2M2Y=" target={"_blank"} class="top-login-register text-decoration-none p-3 text-secondary">
+                              <i class="fa-brands fa-instagram"></i>
+                              </a>
                               <Link to={"/donate"} className="btn btn-warning">Пожертвовать сейчас</Link>
                           </div>
                       </div>

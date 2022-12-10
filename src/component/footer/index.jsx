@@ -34,17 +34,17 @@ const Footer = () => {
                           <div className="widget-title">
                               <h3 style={{color: "gray"}}>Контакты</h3>
                           </div>
-                          <p className="fs-6" style={{color: "gray"}}>Благотворительный фонд: Путь милосердия</p>
+                          <p className="fs-6" style={{color: "gray"}}>Чатный Благотворительный Фонд "Путь милосердия"</p>
                           <ul className="widget-list">
                               {/*<li className="widget-list-item d-flex align-items-center mb-2">*/}
                               {/*    <i className="fa-solid fa-location-dot me-3"></i> <span style={{color: "gray"}}>28 Street, New York City,*/}
                               {/*              USA</span>*/}
                               {/*</li>*/}
                               <li className="widget-list-item d-flex align-items-center mb-2">
-                                  <i className="fa-solid fa-phone me-3"></i> <a href="tel:+77053011142" style={{color: "gray"}}>+7 705 301 1142</a>
+                                  <i className="fa-solid fa-phone me-3"></i> <a href="tel:+77056308025" style={{color: "gray"}}>+77056308025</a>
                               </li>
                               <li className="widget-list-item d-flex align-items-center mb-2">
-                                  <i className="fa-solid fa-envelope me-3"></i> <a href="mailto:yankepchoop@gmail.com" style={{color: "gray"}}>yankepchoop@gmail.com</a>
+                                  <i className="fa-solid fa-envelope me-3"></i> <a href="mailto:info@pathmercy.com" style={{color: "gray"}}>info@pathmercy.com</a>
                               </li>
                           </ul>
                       </div>
