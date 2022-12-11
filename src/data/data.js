@@ -1,7 +1,7 @@
 export const data = [
     {
         id: 0,
-        img: ["./assets/images/help/1.jfif"],
+        img: ["./assets/images/help/1.jpeg"],
         title: "Сбор на лечение девочке по имени- Яна.",
         date: "10.10.2022",
         Raised: "240000",
